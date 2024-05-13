@@ -2,7 +2,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Oswald";
-  background-image: url("/greenyellow.jpg");
+  background-image: url("./greenyellow.jpg");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
