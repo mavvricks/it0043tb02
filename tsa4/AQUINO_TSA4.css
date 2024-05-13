@@ -1,0 +1,75 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Oswald";
+  background-image: url("/greenyellow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  margin: 0% auto;
+}
+
+.logo {
+  height: 200px;
+  padding-right: 40cm;
+}
+
+.p1 {
+  text-align: center;
+  font-size: 25px;
+  color: bisque;
+  padding-left: 250px;
+  padding-right: 250px;
+  text-shadow: 2px 3px black;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(68, 55, 25);
+}
+
+h2 {
+  font-size: 40px;
+  color: maroon;
+}
+
+.p2 {
+  text-align: center;
+  font-size: 25px;
+  color: bisque;
+  padding-left: 250px;
+  padding-right: 250px;
+  text-shadow: 2px 3px black;
+}
+
+.p3 {
+  text-align: center;
+  font-size: 25px;
+  color: bisque;
+  padding-left: 250px;
+  padding-right: 250px;
+  text-shadow: 2px 3px black;
+}
+
+.p4 {
+  text-align: center;
+  font-size: 25px;
+  color: bisque;
+  text-align: right;
+  padding-right: 300px;
+  font-style: italic;
+  text-decoration: underline;
+  text-shadow: 2px 3px black;
+}
+
+.deg {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.date {
+  font-weight: bold;
+  text-decoration: underline;
+}
