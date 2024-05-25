@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    margin: 0% auto;
+    padding: 15px;
+    font-family:Poetsen One;
+    background: linear-gradient(to top, rgb(230, 0, 0), rgb(109, 132, 175));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 60px;
+    color: aqua;
+}
+
+.container1 {
+    background-color: transparent;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    padding: 30px;
+    margin: 0% auto;
+    right: 25%;
+    padding-bottom: 60px;
+}
+
+.mav {
+    height: 500px;
+    box-shadow:  8px 16px rgb(17, 1, 1);
+
+}
+
+h2 {
+    padding-top: 5px;
+    font-size: 40px;
+    margin: auto;
+}
+
+.container1:hover{
+    transform: scale(1.1);
+    transition: 10ms;
+
+}
+
+#heart{
+    height: 150px;
+    box-shadow: 5px, 5px, whitesmoke;
+    position: absolute;
+    top: 40%;
+    left:45%;
+}
+
+#heart:hover{
+transform: scale(1.2);
+}
+
+.pau{
+height: 500px;
+box-shadow:  8px 16px rgb(17, 1, 1);
+}
+
+.container2{
+    background-color: transparent;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    padding: 30px;
+    margin: auto;
+    left: 25%;
+    padding-bottom: 60px;
+    top: -15.5cm
+}
+
+.container2:hover{
+    transform: scale(1.1);
+    transition: 10ms;
+
+}
