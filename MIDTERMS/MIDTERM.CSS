@@ -1,0 +1,125 @@
+.container {
+  width: 100vw;
+  border: 2px solid black;
+  padding: 50px;
+  background-image: url("https://w.wallha.com/ws/9/dLvNy0ht.jpg");
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  row-gap: 5px;
+  column-gap: 0px;
+  display: flex;
+}
+
+.size {
+  height: 360px;
+}
+
+.background {
+  padding: 30px;
+  border: 4px solid black;
+  border-radius: 10px;
+  width: 320px;
+  display: inline-block;
+}
+
+.zubat {
+  background-color: blueviolet;
+}
+
+.bell {
+  background-color: yellowgreen;
+}
+
+.bull {
+  background-color: lightgreen;
+}
+
+.char {
+  background-color: orange;
+}
+
+.drat {
+  background-color: aqua;
+}
+
+.eev {
+  background-color: darkkhaki;
+}
+
+.meow {
+  background-color: lightgray;
+}
+
+.mew {
+  background-color: lightblue;
+}
+
+.pikachu {
+  background-color: yellow;
+}
+
+.ratata {
+  background-color: blue;
+}
+
+.squirtle1 {
+  background-color: deepskyblue;
+}
+
+.weedle {
+  background-color: burlywood;
+}
+
+h1 {
+  display: none;
+}
+
+.ball{
+    display: none;
+}
+
+@media (max-width: 1660px) {
+  .background {
+    transition-duration: 5ms;
+    transition: 5ms;
+  }
+}
+
+@media (max-width: 1285px) {
+  .background {
+    display: inline;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 1100px;
+    margin: 2px;
+    display: inline-block
+  }
+
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    display: flex;
+  }
+
+  .size {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-family: monospace;
+    display: inline-block;
+    text-align: start;
+    font-size: 100px;
+    right: 30%;
+    color: whitesmoke;
+  }
+
+  .ball{
+    display: inline-block;
+    width: 200px;
+    padding-left: 43rem;
+  }
+}
