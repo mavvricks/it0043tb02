@@ -1,102 +1,13 @@
 .container {
     width: 100vw;
     border: 2px solid black;
-    padding: 50px;
+    padding: 10px;
     background-image: url("https://w.wallha.com/ws/9/dLvNy0ht.jpg");
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    row-gap: 5px;
-    column-gap: 0px;
-    display: flex;
-}
-
-.size {
-    height: 350px;
-}
-
-.background {
-    padding: 30px;
-    border: 4px solid black;
-    border-radius: 10px;
-    width: 320px;
-    display: inline-block;
-}
-
-.zubat {
-    background-color: blueviolet;
-}
-
-.bell {
-    background-color: yellowgreen;
-}
-
-.bull {
-    background-color: lightgreen;
-}
-
-.char {
-    background-color: orange;
-}
-
-.drat {
-    background-color: aqua;
-}
-
-.eev {
-    background-color: darkkhaki;
-}
-
-.meow {
-    background-color: lightgray;
-}
-
-.mew {
-    background-color: lightblue;
-}
-
-.pikachu {
-    background-color: yellow;
-}
-
-.ratata {
-    background-color: blue;
-}
-
-.squirtle1 {
-    background-color: deepskyblue;
-}
-
-.weedle {
-    background-color: burlywood;
-}
-
-h1 {
-    display: none;
-}
-
-.ball {
-    display: none;
-}
-
-
-@media (max-width: 1660px) {
-    .background {
-        transition-duration: 5ms;
-        transition: 5ms;
-    }
-}
-
-.container {
-    width: 95vw;
-    border: 2px solid black;
-    padding: 50px;
-    background-image: url("https://w.wallha.com/ws/9/dLvNy0ht.jpg");
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    row-gap: 5px;
-    column-gap: 0px;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 30px;
     display: flex;
 }
 
@@ -108,7 +19,7 @@ h1 {
     padding: 30px;
     border: 4px solid black;
     border-radius: 10px;
-    width: 320px;
+    width: 350px;
     display: inline-block;
 }
 
@@ -162,23 +73,27 @@ h1 {
 
 h1 {
     display: none;
+   
 }
 
 .ball {
     display: none;
+    
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1315px) {
     .background {
         display: flex;
         flex-wrap: nowrap;
         height: 200px;
-        width: 100%;
+        width: 95%;
         margin: 2px;
         justify-content: space-between;
         align-items: center;
         padding: 5px;
+        transition: 0.3s;
+        transition-duration: 0.3s;
     }
 
     .container {
@@ -186,6 +101,9 @@ h1 {
         flex-direction: column;
         margin: 0% auto;
         display: flex;
+        row-gap: 10px;
+        transition: 0.3s;
+        transition-duration: 0.3s;
     }
 
     .size {
@@ -203,6 +121,8 @@ h1 {
         flex-grow: 1;
         text-align: center;
         text-shadow: 4px 4px black;
+        transition: 0.3s;
+        transition-duration: 0.3s;
     }
 
     .ball {
@@ -211,34 +131,72 @@ h1 {
         height: 200px;
         margin-left: auto;
         margin-right: 0;
+        transition: 0.3s;
+        transition-duration: 0.3s;
+    }
+
+    .background:hover {
+        background-image: url(./4833725.jpg);
+        background-attachment: local;
+        height: 200px;
+        width: 95%;
+        background-position: center;
+        background-size: cover;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
+    .container {
+        padding: 10px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: 0.3s;
+        transition-duration: 0.3s;
+    }
+
     .background {
         display: flex;
         flex-wrap: wrap;
-        width: 600px;
-        height: 600px;
+        width: 550px;
+        height: 300px;
+        align-items: center;
+        padding-bottom: 14rem;
+        padding-top: -2rem;
+        justify-content: center;
+        transition: 0.3s;
+        transition-duration: 0.3s;
     }
 
     .ball {
-        transition: 1s;
-        transition-duration: 1s;
+        transition: 0.3s;
+        transition-duration: 0.3s;
         display: none;
     }
 
     h1 {
-        transition-duration: 5s;
-        display: none;
+        font-size: 85px;
+        transition: 0.3s;
+        transition-duration: 0.3s;
     }
 
     .size {
         align-items: center;
         flex-wrap: wrap;
-        height: 550px;
+        height: 400px;
+        width: 400px;
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+    .background:hover {
+        background-image: url(./4833725.jpg);
+        background-attachment: local;
         width: 550px;
-        padding: 25px;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
     }
 
 }
