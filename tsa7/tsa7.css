@@ -1,0 +1,215 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menulist {
+    margin-left: 30px;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+.a:hover {
+    background-color: #111;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+}
+
+.main {
+    display: grid;
+    gap: 20px;
+    align-items: start;
+    justify-items: start;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.doraemain {
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.text-content {
+    color: white;
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 10px;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: white;
+}
+
+.info {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.two {
+    text-align: start;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.text-info {
+    font-size: 1.1rem;
+}
+
+.main-char {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-weight:bold;
+    place-items: end;
+}
+
+.char-block {
+    text-align: center;
+    margin: 10px;
+}
+
+.char-img {
+    width: 150px;
+}
+
+.name {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    .container1 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menulist {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .container2 {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        grid-column: auto;
+        grid-row: auto;
+        margin-top: 20px;
+    }
+
+    .main-char {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .doraemain {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    /* For smaller devices */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a {
+        margin: 5px 0;
+    }
+
+    .container1 {
+        padding: 10px;
+    }
+}
