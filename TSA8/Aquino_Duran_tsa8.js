@@ -6,9 +6,9 @@ function resetFlex() {
         box.style.height = '100px'; 
     });
     document.getElementById('gap').value = 0;
-    document.getElementById('box1').value = 1;
-    document.getElementById('box2').value = 2;
-    document.getElementById('box3').value = 6;
+    document.getElementById('box1').value = 0;
+    document.getElementById('box2').value = 0;
+    document.getElementById('box3').value = 0;
 }
 
 function updateGap() {
@@ -36,7 +36,10 @@ function growAll() {
     document.querySelectorAll('.box').forEach(box => box.style.flexGrow = '1');
 }
 
+
 function updateGrow(boxNumber) {
-    const growValue = document.getElementById(`box${boxNumber}`).value;
-    document.getElementById(`box${boxNumber}`).style.flexGrow = growValue;
+    const growValue = document.getElementById('box${boxNumber}').value;
+    document.querySelector('.flex-container').style.gap = `${gapValue}px`;
 }
+
+updateGap();
