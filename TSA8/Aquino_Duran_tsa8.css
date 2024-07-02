@@ -15,17 +15,18 @@ body {
     place-content: center;
     text-align: center;
     gap: 20px;
-    background-image: url("https://media.istockphoto.com/id/1300208115/vector/triangle-cross-square-and-circle-illustration-rectangular-on-dark-blue-background.jpg?s=612x612&w=0&k=20&c=foWrqO-8DrO_8HsZcYvZNB_M8qfyNftUCEMGEUYU3o4=");
+    background-image: url("https://img.freepik.com/premium-vector/snow-day-game-background_7814-309.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid 4px  #7406f1;
+    background-position: start;
+    border: 2px dashed #7406f1;
 
 }
 
 .flex-container {
     display: flex;
     gap: 0;
-    border: 5px solid #7406f1;
+    border: 2px dashed #7406f1;
     padding: 10px;
     min-height: 200px;
     max-height: 60vh;
@@ -35,9 +36,10 @@ body {
     margin:10px;
     margin-bottom: 0px;
     place-items: center;
-    background-image: url("https://t4.ftcdn.net/jpg/03/27/22/31/360_F_327223167_6s3RXZaysJMMi0AI54z3I4ojBEhhfTdc.jpg");
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1ac2f265838927.5b0279a2217bf.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .box {
@@ -48,40 +50,43 @@ body {
     min-width: 50px;
     width: 80px; 
     height: 80px; 
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 4.5rem;
     font-weight: bolder;
+    box-shadow: 4px 4px 15px white;
 }
 
 #box1 {
-    background-color: blue;
+    background-color: rgb(98, 98, 243);
     color: white;
 }
 
 #box2 {
-    background-color: red;
+    background-color: rgb(226, 83, 83);
     color: white;
 }
 
 #box3 {
-    background-color: green;
+    background-color: rgb(17, 156, 17);
     color: white;
 }
 
 button {
     padding: 10px;
     margin: 5px;
-    background-color: purple;
+    background-color: gray;
+    border: 5px solid black;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    width: 250px; 
+    width: 250px;   
     place-content: start;
+    box-shadow: 4px 4px 3px 3px black;
 }
 
 button:hover {
-    background-color: darkviolet;
+    background-color: rgb(107, 100, 100);
 }
 
 input[type="number"] {
@@ -99,10 +104,11 @@ h2{
     font-size: 1.1rem;
     margin: 0;
     color: white;
+    text-shadow:2px 2px #000;
 }
 
 h3{
     display: inline;
     color:white ;
-}
-
+    text-shadow:2px 2px #000;
+    }
