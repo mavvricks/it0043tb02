@@ -2,13 +2,13 @@ function resetFlex() {
     document.querySelector('.flex-container').style = '';
     document.querySelectorAll('.box').forEach(box => {
         box.style.flexGrow = '0';
-        box.style.width = '100px'; 
-        box.style.height = '100px'; 
+        box.style.width = '100px';
+        box.style.height = '100px';
     });
     document.getElementById('gap').value = 0;
-    document.getElementById('box1').value = 0;
-    document.getElementById('box2').value = 0;
-    document.getElementById('box3').value = 0;
+    document.getElementById('grow1').value = 0;
+    document.getElementById('grow2').value = 0;
+    document.getElementById('grow3').value = 0;
 }
 
 function updateGap() {
@@ -36,10 +36,7 @@ function growAll() {
     document.querySelectorAll('.box').forEach(box => box.style.flexGrow = '1');
 }
 
-
 function updateGrow(boxNumber) {
-    const growValue = document.getElementById('box${boxNumber}').value;
-    document.querySelector('.flex-container').style.gap = `${gapValue}px`;
+    const growValue = document.getElementById(`grow${boxNumber}`).value;
+    document.getElementById(`box${boxNumber}`).style.flexGrow = growValue;
 }
-
-updateGap();
