@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Aquino_Duran_tsa8.css" />
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+    <div class="main-container">
+        <div class="controls">
+            <button class="wider-button" onclick="resetFlex()">Reset Flexbox</button>
+
+            <label for="Gap">
+                <h3>Gap</h3>
+            </label>
+            <input type="number" id="gap" value="0" min="0" oninput="updateGap()" />
+            <div>
+                <h2>Flex Direction</h2>
+                <button onclick="setDirection('row')">Row</button>
+                <button onclick="setDirection('column')">Column</button>
+            </div>
+            <div>
+                <h2>Justify Content</h2>
+                <button onclick="setJustify('flex-start')">Start</button>
+                <button onclick="setJustify('center')">Center</button>
+                <button onclick="setJustify('flex-end')">End</button>
+                <button onclick="setJustify('space-between')">Space Between</button>
+                <button onclick="setJustify('space-around')">Space Around</button>
+                <button onclick="setJustify('space-evenly')">Space Evenly</button>
+            </div>
+            <div>
+                <h2>Align Items</h2>
+                <button onclick="setAlign('flex-start')">Start</button>
+                <button onclick="setAlign('center')">Center</button>
+                <button onclick="setAlign('flex-end')">End</button>
+            </div>
+            <div>
+                <h2>Flex Grow</h2>
+                <button id="button reset" onclick="resetGrow()">Reset</button>
+                <button onclick="growAll()">Grow All</button><br />
+                <label for="grow1">
+                    <h3>Box 1</h3>
+                </label>
+                <input type="number" id="grow1" value="0" min="0" oninput="updateGrow(1)" />
+                <label for="grow2">
+                    <h3>Box 2</h3>
+                </label>
+                <input type="number" id="grow2" value="0" min="0" oninput="updateGrow(2)" />
+                <label for="grow3">
+                    <h3>Box 3</h3>
+                </label>
+                <input type="number" id="grow3" value="0" min="0" oninput="updateGrow(3)" />
+            </div>
+        </div>
+    </div>
+    <script src="Aquino_Duran_tsa8.js"></script>
+</body>
+
+</html>
