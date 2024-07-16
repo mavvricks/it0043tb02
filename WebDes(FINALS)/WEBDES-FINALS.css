@@ -340,3 +340,163 @@ h5{
     color:#525252;
     margin-top: 15px;
 }
+
+
+@media (max-width: 1200px) {
+    .about-picscontainer {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-picscontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-pics {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .pic {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .text-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-pic {
+        height: 500px;
+    }
+
+    .welcome {
+        font-size: 2.5rem;
+    }
+
+    .Iam {
+        font-size: 2rem;
+    }
+
+    .year {
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .know {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu {
+        margin: 10px 0;
+    }
+
+    .pic-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-pic {
+        height: 400px;
+        margin: 20px 0;
+    }
+
+    .welcome-text {
+        max-width: 90%;
+    }
+
+    .welcome {
+        font-size: 2.2rem;
+    }
+
+    .Iam {
+        font-size: 1.8rem;
+    }
+
+    .year {
+        font-size: 1.3rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .know {
+        width: 180px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-pic {
+        height: 300px;
+    }
+
+    .welcome {
+        font-size: 2rem;
+    }
+
+    .Iam {
+        font-size: 1.6rem;
+    }
+
+    .year {
+        font-size: 1.2rem;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+    }
+
+    .know {
+        width: 150px;
+        font-size: 1rem;
+    }
+}
