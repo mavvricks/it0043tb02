@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizler</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="quiz-title-display">Quizler</h1>
+        <div class="header-buttons">
+          <button id="shuffle-btn" class="header-btn">
+            <i class="bx bx-shuffle"></i>
+          </button>
+          <button id="settings-btn" class="header-btn">
+            <i class="bx bx-cog"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="settings-panel" class="settings-panel">
+        <div class="settings-content">
+          <div class="settings-header">
+            <h2>Quiz Settings</h2>
+            <button id="cancel-settings" class="cancel-btn">
+              <i class="bx bx-x"></i> Cancel
+            </button>
+          </div>
+          
+          <div class="question-bank-management">
+            <h3>Question Bank Management</h3>
+            <div class="bank-controls">
+              <div class="bank-input-group">
+                <input type="text" id="bank-name" placeholder="Enter question bank name">
+                <button id="save-bank">
+                  <i class="bx bx-save"></i> Save Question Bank
+                </button>
+              </div>
+              <div class="bank-select-group">
+                <select id="bank-selector">
+                  <option value="">Select a question bank</option>
+                </select>
+                <div class="bank-actions">
+                  <button id="load-bank">
+                    <i class="bx bx-folder-open"></i> Load
+                  </button>
+                  <button id="delete-bank">
+                    <i class="bx bx-trash"></i> Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="setting-group">
+            <label for="quiz-title-input">Quiz Title</label>
+            <input
+              type="text"
+              id="quiz-title-input"
+              placeholder="Enter quiz title"
+            />
+          </div>
+          <div class="setting-group">
+            <label for="bulk-questions">Bulk Add Questions</label>
+            <textarea
+              id="bulk-questions"
+              placeholder="Paste your questions here in the following format:
+
+1. What is the capital of France?
+A) London
+B) Paris*
+C) Berlin
+D) Madrid
+Explanation: Paris is the capital of France.
+
+2. Which planet is known as the Red Planet?
+A) Venus
+B) Mars*
+C) Jupiter
+D) Saturn
+Explanation: Mars is called the Red Planet due to its reddish appearance.
+
+Note: Add an asterisk (*) after the correct answer option."
+            ></textarea>
+            <button id="parse-questions" class="parse-btn">
+              Parse Questions
+            </button>
+          </div>
+          <div class="setting-group">
+            <label>Questions</label>
+            <div id="questions-container"></div>
+            <button id="add-question" class="add-question-btn">
+              <i class="bx bx-plus"></i> Add Question
+            </button>
+          </div>
+          <div class="settings-buttons">
+            <button id="save-settings" class="save-btn">
+              <i class="bx bx-save"></i> Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress">
+        Question <span id="current-question">1</span> of
+        <span id="total-questions">0</span>
+      </div>
+
+      <div class="quiz-card">
+        <div class="question-container">
+          <h2 id="question-text">Your question will appear here</h2>
+        </div>
+
+        <div class="options-container">
+          <button class="option" data-index="0"></button>
+          <button class="option" data-index="1"></button>
+          <button class="option" data-index="2"></button>
+          <button class="option" data-index="3"></button>
+        </div>
+
+        <div class="explanation-container">
+          <p id="explanation-text"></p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="prev-btn" class="control-btn">
+          <i class="bx bx-chevron-left"></i> Previous
+        </button>
+        <button id="next-btn" class="control-btn">
+          Next <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
